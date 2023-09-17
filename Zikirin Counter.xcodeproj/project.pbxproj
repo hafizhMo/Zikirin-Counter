@@ -11,6 +11,7 @@
 		FB5136C12AB754250011DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136C02AB754250011DE07 /* ContentView.swift */; };
 		FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C22AB754270011DE07 /* Assets.xcassets */; };
 		FB5136C62AB754270011DE07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C52AB754270011DE07 /* Preview Assets.xcassets */; };
+		FB5136CD2AB75BFB0011DE07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB5136CC2AB75BFB0011DE07 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FB5136C02AB754250011DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB5136C22AB754270011DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5136C52AB754270011DE07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB5136CC2AB75BFB0011DE07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		FB5136BD2AB754250011DE07 /* Zikirin Counter */ = {
 			isa = PBXGroup;
 			children = (
+				FB5136CC2AB75BFB0011DE07 /* GoogleService-Info.plist */,
 				FB5136BE2AB754250011DE07 /* Zikirin_CounterApp.swift */,
 				FB5136C02AB754250011DE07 /* ContentView.swift */,
 				FB5136C22AB754270011DE07 /* Assets.xcassets */,
@@ -127,6 +130,7 @@
 			files = (
 				FB5136C62AB754270011DE07 /* Preview Assets.xcassets in Resources */,
 				FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */,
+				FB5136CD2AB75BFB0011DE07 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
