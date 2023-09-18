@@ -26,5 +26,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:964687004850:ios:c0953d682166150efa75ab</string>
+	<key>DATABASE_URL</key>
+	<string>https://zikirin-counter-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>

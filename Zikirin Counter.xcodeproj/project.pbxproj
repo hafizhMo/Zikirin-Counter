@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB5136BF2AB754250011DE07 /* Zikirin_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136BE2AB754250011DE07 /* Zikirin_CounterApp.swift */; };
+		FB1ADFE12AB7AF8000941D14 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FB1ADFE02AB7AF8000941D14 /* FirebaseDatabase */; };
+		FB1ADFE32AB7AF8000941D14 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB1ADFE22AB7AF8000941D14 /* FirebaseDatabaseSwift */; };
+		FB5136BF2AB754250011DE07 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136BE2AB754250011DE07 /* MainApp.swift */; };
 		FB5136C12AB754250011DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136C02AB754250011DE07 /* ContentView.swift */; };
 		FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C22AB754270011DE07 /* Assets.xcassets */; };
 		FB5136C62AB754270011DE07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C52AB754270011DE07 /* Preview Assets.xcassets */; };
-		FB5136CD2AB75BFB0011DE07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB5136CC2AB75BFB0011DE07 /* GoogleService-Info.plist */; };
+		FB80DF5D2AB8535700E17DB6 /* PublicTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */; };
+		FB80DF5F2AB8568C00E17DB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */; };
+		FB80DF612AB8580D00E17DB6 /* PublicTotalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB5136BB2AB754250011DE07 /* Zikirin Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikirin Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5136BE2AB754250011DE07 /* Zikirin_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikirin_CounterApp.swift; sourceTree = "<group>"; };
+		FB5136BE2AB754250011DE07 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		FB5136C02AB754250011DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB5136C22AB754270011DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5136C52AB754270011DE07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB5136CC2AB75BFB0011DE07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTotalView.swift; sourceTree = "<group>"; };
+		FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTotalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1ADFE32AB7AF8000941D14 /* FirebaseDatabaseSwift in Frameworks */,
+				FB1ADFE12AB7AF8000941D14 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +61,12 @@
 		FB5136BD2AB754250011DE07 /* Zikirin Counter */ = {
 			isa = PBXGroup;
 			children = (
-				FB5136CC2AB75BFB0011DE07 /* GoogleService-Info.plist */,
-				FB5136BE2AB754250011DE07 /* Zikirin_CounterApp.swift */,
+				FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */,
 				FB5136C02AB754250011DE07 /* ContentView.swift */,
+				FB5136BE2AB754250011DE07 /* MainApp.swift */,
 				FB5136C22AB754270011DE07 /* Assets.xcassets */,
 				FB5136C42AB754270011DE07 /* Preview Content */,
+				FB80DF5B2AB8533200E17DB6 /* Scenes */,
 			);
 			path = "Zikirin Counter";
 			sourceTree = "<group>";
@@ -68,6 +77,15 @@
 				FB5136C52AB754270011DE07 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB80DF5B2AB8533200E17DB6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */,
+				FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +104,10 @@
 			dependencies = (
 			);
 			name = "Zikirin Counter";
+			packageProductDependencies = (
+				FB1ADFE02AB7AF8000941D14 /* FirebaseDatabase */,
+				FB1ADFE22AB7AF8000941D14 /* FirebaseDatabaseSwift */,
+			);
 			productName = "Zikirin Counter";
 			productReference = FB5136BB2AB754250011DE07 /* Zikirin Counter.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +136,9 @@
 				Base,
 			);
 			mainGroup = FB5136B22AB754250011DE07;
+			packageReferences = (
+				FB1ADFDF2AB7AF8000941D14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FB5136BC2AB754250011DE07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +155,7 @@
 			files = (
 				FB5136C62AB754270011DE07 /* Preview Assets.xcassets in Resources */,
 				FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */,
-				FB5136CD2AB75BFB0011DE07 /* GoogleService-Info.plist in Resources */,
+				FB80DF5F2AB8568C00E17DB6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB80DF612AB8580D00E17DB6 /* PublicTotalViewModel.swift in Sources */,
 				FB5136C12AB754250011DE07 /* ContentView.swift in Sources */,
-				FB5136BF2AB754250011DE07 /* Zikirin_CounterApp.swift in Sources */,
+				FB5136BF2AB754250011DE07 /* MainApp.swift in Sources */,
+				FB80DF5D2AB8535700E17DB6 /* PublicTotalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +370,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB1ADFDF2AB7AF8000941D14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB1ADFE02AB7AF8000941D14 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB1ADFDF2AB7AF8000941D14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FB1ADFE22AB7AF8000941D14 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB1ADFDF2AB7AF8000941D14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB5136B32AB754250011DE07 /* Project object */;
 }
