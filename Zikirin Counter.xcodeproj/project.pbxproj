@@ -16,6 +16,7 @@
 		FB80DF5D2AB8535700E17DB6 /* PublicTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */; };
 		FB80DF5F2AB8568C00E17DB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */; };
 		FB80DF612AB8580D00E17DB6 /* PublicTotalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */; };
+		FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTotalView.swift; sourceTree = "<group>"; };
 		FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTotalViewModel.swift; sourceTree = "<group>"; };
+		FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +84,27 @@
 		FB80DF5B2AB8533200E17DB6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FB80DF692AB8A11600E17DB6 /* Counter */,
+				FB80DF682AB8A10B00E17DB6 /* PublicTotal */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB80DF682AB8A10B00E17DB6 /* PublicTotal */ = {
+			isa = PBXGroup;
+			children = (
 				FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */,
 				FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */,
 			);
-			path = Scenes;
+			path = PublicTotal;
+			sourceTree = "<group>";
+		};
+		FB80DF692AB8A11600E17DB6 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +189,7 @@
 				FB5136C12AB754250011DE07 /* ContentView.swift in Sources */,
 				FB5136BF2AB754250011DE07 /* MainApp.swift in Sources */,
 				FB80DF5D2AB8535700E17DB6 /* PublicTotalView.swift in Sources */,
+				FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
