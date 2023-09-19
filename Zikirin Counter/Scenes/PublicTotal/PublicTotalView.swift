@@ -15,8 +15,6 @@ struct PublicTotalView: View {
       Color.gray.opacity(0.05).ignoresSafeArea()
       VStack(spacing: 0) {
         publicZikirCard()
-        otherCard()
-        Spacer()
       }
     }
     .onAppear {
@@ -27,23 +25,42 @@ struct PublicTotalView: View {
   private func publicZikirCard() -> some View {
     ZStack {
       Rectangle()
-        .foregroundColor(.white)
-        .frame(maxWidth: .infinity, maxHeight: 250)
+        .foregroundColor(.black.opacity(0.85))
+        .frame(maxWidth: .infinity)
         .cornerRadius(20)
         .shadow(color: Color.black.opacity(0.1), radius: 12, x: 1, y: 1)
         .padding()
-      VStack(alignment: .leading) {
+      VStack(alignment: .trailing, spacing: 20) {
         if viewModel.total != nil {
-          Text("Total Zikir Around the World".uppercased())
-            .bold()
-            .font(.caption)
-            .foregroundColor(.primary.opacity(0.5))
-          HStack(alignment: .firstTextBaseline) {
-            Text(viewModel.total!)
+          VStack(alignment: .trailing, spacing: -8) {
+            Text("200+")
+              .foregroundColor(.mint.opacity(0.6))
+              .font(.system(size: 48, weight: .heavy))
+            Text("Dhikr Than Yesterday".uppercased())
+              .foregroundColor(.mint.opacity(0.6))
+              .bold()
+              .font(.caption)
+              .foregroundColor(.primary.opacity(0.7))
+          }
+          VStack(alignment: .trailing, spacing: -8) {
+            Text("\(viewModel.total!)K")
+              .foregroundColor(.white.opacity(0.9))
               .font(.system(size: 72, weight: .heavy))
-            Text("X")
-              .font(.system(size: 32, weight: .black))
-            Spacer()
+            Text("Dhikr already read around the world".uppercased())
+              .foregroundColor(.white.opacity(0.9))
+              .bold()
+              .font(.caption)
+              .foregroundColor(.primary.opacity(0.7))
+          }
+          VStack(alignment: .trailing, spacing: -8) {
+            Text("87")
+              .foregroundColor(.mint.opacity(0.6))
+              .font(.system(size: 48, weight: .heavy))
+            Text("Total Zikir You read Today".uppercased())
+              .foregroundColor(.mint.opacity(0.6))
+              .bold()
+              .font(.caption)
+              .foregroundColor(.primary.opacity(0.7))
           }
         } else {
           Text("Fetching value...")
