@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SummaryView: View {
-  @StateObject var viewModel = SummaryViewModel()
+  @ObservedObject var viewModel: SummaryViewModel
   
   var body: some View {
     ZStack {
@@ -16,9 +16,6 @@ struct SummaryView: View {
       VStack(spacing: 0) {
         publicZikirCard()
       }
-    }
-    .onAppear {
-      viewModel.observeTotal()
     }
   }
   
@@ -31,7 +28,6 @@ struct SummaryView: View {
         .shadow(color: Color.black.opacity(0.1), radius: 12, x: 1, y: 1)
         .padding()
       VStack(alignment: .trailing, spacing: 20) {
-        if viewModel.total != nil {
           VStack(alignment: .trailing, spacing: -8) {
             Text("200+")
               .foregroundColor(.mint.opacity(0.6))
@@ -43,7 +39,7 @@ struct SummaryView: View {
               .foregroundColor(.primary.opacity(0.7))
           }
           VStack(alignment: .trailing, spacing: -8) {
-            Text("\(viewModel.total!)K")
+            Text("\(viewModel.total)K")
               .foregroundColor(.white.opacity(0.9))
               .font(.system(size: 72, weight: .heavy))
             Text("Dhikr already read around the world".uppercased())
@@ -62,11 +58,6 @@ struct SummaryView: View {
               .font(.caption)
               .foregroundColor(.primary.opacity(0.7))
           }
-        } else {
-          Text("Fetching value...")
-            .padding()
-            .background(.gray)
-        }
       }
       .padding()
       .padding(.horizontal)
@@ -87,6 +78,6 @@ struct SummaryView: View {
 
 struct SummaryView_Previews: PreviewProvider {
   static var previews: some View {
-    SummaryView()
+    SummaryView(viewModel: SummaryViewModel(total: .constant(0)))
   }
 }

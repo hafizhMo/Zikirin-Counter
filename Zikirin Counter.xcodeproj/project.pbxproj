@@ -18,6 +18,11 @@
 		FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */; };
 		FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */; };
 		FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */; };
+		FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */; };
+		FBFB62552ABB2BFA00E3DCCA /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62542ABB2BFA00E3DCCA /* HomeConfigurator.swift */; };
+		FBFB62572ABB2CE000E3DCCA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62562ABB2CE000E3DCCA /* HomeRouter.swift */; };
+		FBFB62592ABB2E0F00E3DCCA /* CounterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62582ABB2E0F00E3DCCA /* CounterConfigurator.swift */; };
+		FBFB625B2ABB2FAE00E3DCCA /* SummaryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB625A2ABB2FAE00E3DCCA /* SummaryConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FBFB62542ABB2BFA00E3DCCA /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		FBFB62562ABB2CE000E3DCCA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		FBFB62582ABB2E0F00E3DCCA /* CounterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterConfigurator.swift; sourceTree = "<group>"; };
+		FBFB625A2ABB2FAE00E3DCCA /* SummaryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,7 @@
 			children = (
 				FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */,
 				FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */,
+				FBFB625A2ABB2FAE00E3DCCA /* SummaryConfigurator.swift */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 			children = (
 				FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */,
 				FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */,
+				FBFB62582ABB2E0F00E3DCCA /* CounterConfigurator.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -130,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				FB5136C02AB754250011DE07 /* HomeView.swift */,
+				FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */,
+				FBFB62542ABB2BFA00E3DCCA /* HomeConfigurator.swift */,
+				FBFB62562ABB2CE000E3DCCA /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,10 +229,15 @@
 			files = (
 				FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */,
 				FB5136C12AB754250011DE07 /* HomeView.swift in Sources */,
+				FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */,
 				FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */,
 				FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */,
+				FBFB62552ABB2BFA00E3DCCA /* HomeConfigurator.swift in Sources */,
+				FBFB625B2ABB2FAE00E3DCCA /* SummaryConfigurator.swift in Sources */,
 				FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */,
+				FBFB62572ABB2CE000E3DCCA /* HomeRouter.swift in Sources */,
 				FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */,
+				FBFB62592ABB2E0F00E3DCCA /* CounterConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ struct ZikirinApp: App {
   
   var body: some Scene {
     WindowGroup {
-      HomeView()
+      HomeConfigurator.configureHomeView()
     }
   }
 }

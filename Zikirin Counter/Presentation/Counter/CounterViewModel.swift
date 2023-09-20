@@ -5,22 +5,20 @@
 //  Created by Hafizh Mo on 20/09/23.
 //
 
+import SwiftUI
 import FirebaseDatabase
 import FirebaseDatabaseSwift
 
 class CounterViewModel: ObservableObject {
-  
+  @Binding private var total: Int
   private let ref = Database.database().reference()
-  private var total: Int = 0
   
-  init() {
-    ref.child("zikirTotal").observe(.value) { [weak self] snapshot in
-      guard let self = self, let total = snapshot.value as? Int else { return }
-      self.total = total
-    }
+  init(total: Binding<Int>) {
+    self._total = total
   }
   
   func updateZikirTotal() {
-    ref.child("zikirTotal").setValue(total + 1)
+    let value = total + 1
+    ref.child("zikirTotal").setValue(value)
   }
 }
