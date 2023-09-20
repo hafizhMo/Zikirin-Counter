@@ -85,18 +85,18 @@
 			children = (
 				FB80DF692AB8A11600E17DB6 /* Counter */,
 				FBFB62512ABB06E800E3DCCA /* Home */,
-				FB80DF682AB8A10B00E17DB6 /* PublicTotal */,
+				FB80DF682AB8A10B00E17DB6 /* Summary */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		FB80DF682AB8A10B00E17DB6 /* PublicTotal */ = {
+		FB80DF682AB8A10B00E17DB6 /* Summary */ = {
 			isa = PBXGroup;
 			children = (
 				FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */,
 				FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */,
 			);
-			path = PublicTotal;
+			path = Summary;
 			sourceTree = "<group>";
 		};
 		FB80DF692AB8A11600E17DB6 /* Counter */ = {
