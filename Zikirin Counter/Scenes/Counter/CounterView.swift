@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct CounterView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @StateObject var viewModel = CounterViewModel()
+  
+  var body: some View {
+    Button {
+      viewModel.updateZikirTotal()
+    } label: {
+      Text("+1")
+        .padding(.horizontal)
+        .padding(.vertical, 8)
+        .background(.regularMaterial)
     }
+
+  }
 }
 
 struct CounterView_Previews: PreviewProvider {
-    static var previews: some View {
-        CounterView()
-    }
+  static var previews: some View {
+    CounterView()
+  }
 }

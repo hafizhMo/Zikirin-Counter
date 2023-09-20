@@ -15,14 +15,14 @@ extension PublicTotalView {
     @Published var total: String? = nil
     
     func readTotal() {
-      ref.child("ZikirTotal").observeSingleEvent(of: .value) { [weak self] snapshot in
+      ref.child("zikirTotal").observeSingleEvent(of: .value) { [weak self] snapshot in
         guard let self = self, let totalInteger = snapshot.value as? Int else { return }
         self.total = String(totalInteger)
       }
     }
     
     func observeTotal() {
-      ref.child("ZikirTotal").observe(.value) { [weak self] snapshot in
+      ref.child("zikirTotal").observe(.value) { [weak self] snapshot in
         guard let self = self, let totalInteger = snapshot.value as? Int else { return }
         self.total = String(totalInteger)
       }
