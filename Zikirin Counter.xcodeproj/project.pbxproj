@@ -9,26 +9,26 @@
 /* Begin PBXBuildFile section */
 		FB1ADFE12AB7AF8000941D14 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FB1ADFE02AB7AF8000941D14 /* FirebaseDatabase */; };
 		FB1ADFE32AB7AF8000941D14 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB1ADFE22AB7AF8000941D14 /* FirebaseDatabaseSwift */; };
-		FB5136BF2AB754250011DE07 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136BE2AB754250011DE07 /* MainApp.swift */; };
-		FB5136C12AB754250011DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136C02AB754250011DE07 /* ContentView.swift */; };
+		FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136BE2AB754250011DE07 /* ZikirinApp.swift */; };
+		FB5136C12AB754250011DE07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136C02AB754250011DE07 /* HomeView.swift */; };
 		FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C22AB754270011DE07 /* Assets.xcassets */; };
 		FB5136C62AB754270011DE07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C52AB754270011DE07 /* Preview Assets.xcassets */; };
-		FB80DF5D2AB8535700E17DB6 /* PublicTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */; };
+		FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */; };
 		FB80DF5F2AB8568C00E17DB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */; };
-		FB80DF612AB8580D00E17DB6 /* PublicTotalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */; };
+		FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */; };
 		FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */; };
 		FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB5136BB2AB754250011DE07 /* Zikirin Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikirin Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5136BE2AB754250011DE07 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
-		FB5136C02AB754250011DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB5136BE2AB754250011DE07 /* ZikirinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikirinApp.swift; sourceTree = "<group>"; };
+		FB5136C02AB754250011DE07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FB5136C22AB754270011DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5136C52AB754270011DE07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTotalView.swift; sourceTree = "<group>"; };
+		FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTotalViewModel.swift; sourceTree = "<group>"; };
+		FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,12 +65,9 @@
 		FB5136BD2AB754250011DE07 /* Zikirin Counter */ = {
 			isa = PBXGroup;
 			children = (
-				FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */,
-				FB5136C02AB754250011DE07 /* ContentView.swift */,
-				FB5136BE2AB754250011DE07 /* MainApp.swift */,
-				FB5136C22AB754270011DE07 /* Assets.xcassets */,
-				FB5136C42AB754270011DE07 /* Preview Content */,
-				FB80DF5B2AB8533200E17DB6 /* Scenes */,
+				FBFB62502ABB06C300E3DCCA /* App */,
+				FB80DF5B2AB8533200E17DB6 /* Presentation */,
+				FBFB624F2ABB06B100E3DCCA /* Supporting Files */,
 			);
 			path = "Zikirin Counter";
 			sourceTree = "<group>";
@@ -83,20 +80,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FB80DF5B2AB8533200E17DB6 /* Scenes */ = {
+		FB80DF5B2AB8533200E17DB6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				FB80DF692AB8A11600E17DB6 /* Counter */,
+				FBFB62512ABB06E800E3DCCA /* Home */,
 				FB80DF682AB8A10B00E17DB6 /* PublicTotal */,
 			);
-			path = Scenes;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		FB80DF682AB8A10B00E17DB6 /* PublicTotal */ = {
 			isa = PBXGroup;
 			children = (
-				FB80DF5C2AB8535700E17DB6 /* PublicTotalView.swift */,
-				FB80DF602AB8580D00E17DB6 /* PublicTotalViewModel.swift */,
+				FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */,
+				FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */,
 			);
 			path = PublicTotal;
 			sourceTree = "<group>";
@@ -108,6 +106,32 @@
 				FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		FBFB624F2ABB06B100E3DCCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */,
+				FB5136C22AB754270011DE07 /* Assets.xcassets */,
+				FB5136C42AB754270011DE07 /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBFB62502ABB06C300E3DCCA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB5136BE2AB754250011DE07 /* ZikirinApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FBFB62512ABB06E800E3DCCA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FB5136C02AB754250011DE07 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB80DF612AB8580D00E17DB6 /* PublicTotalViewModel.swift in Sources */,
-				FB5136C12AB754250011DE07 /* ContentView.swift in Sources */,
-				FB5136BF2AB754250011DE07 /* MainApp.swift in Sources */,
-				FB80DF5D2AB8535700E17DB6 /* PublicTotalView.swift in Sources */,
+				FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */,
+				FB5136C12AB754250011DE07 /* HomeView.swift in Sources */,
+				FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */,
+				FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */,
 				FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */,
 				FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */,
 			);
@@ -321,7 +345,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Zikirin Counter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Zikirin Counter/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = Z824M97CF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -350,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Zikirin Counter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Zikirin Counter/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = Z824M97CF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

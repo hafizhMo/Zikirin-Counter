@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
   var body: some View {
     TabView {
       CounterView()
         .tabItem {
           Label("Counter", systemImage: "deskclock")
         }
-      PublicTotalView()
+      SummaryView()
         .tabItem {
           Label("World", systemImage: "globe")
         }
@@ -22,8 +22,8 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    HomeView()
   }
 }

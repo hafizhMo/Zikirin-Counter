@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct PublicTotalView: View {
-  @StateObject var viewModel = ViewModel()
+struct SummaryView: View {
+  @StateObject var viewModel = SummaryViewModel()
   
   var body: some View {
     ZStack {
@@ -85,8 +85,8 @@ struct PublicTotalView: View {
   }
 }
 
-struct PublicTotalView_Previews: PreviewProvider {
+struct SummaryView_Previews: PreviewProvider {
   static var previews: some View {
-    PublicTotalView()
+    SummaryView()
   }
 }
