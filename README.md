@@ -1,6 +1,6 @@
 # Zikirin-Counter
 
-Part of [Zikirin](https://apps.apple.com/id/app/zikirin/id6444427443) app, but I take it personally. Some of the design is inspired by the design team's sandbox that isn't currently in use, but I like it.
+Part of <a href="https://apps.apple.com/id/app/zikirin/id6444427443" target="_blank">Zikirin</a> app, but I take it personally. Some of the design is inspired by the design team's sandbox that isn't currently in use, but I like it.
 
 ## Tech Stack
 - SwiftUI
