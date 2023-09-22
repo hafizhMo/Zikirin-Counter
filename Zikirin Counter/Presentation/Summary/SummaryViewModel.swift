@@ -10,6 +10,7 @@ import FirebaseDatabase
 import FirebaseDatabaseSwift
 
 class SummaryViewModel: ObservableObject {
+  @Published var isPresented = false
   @Binding var total: Int
   
   init(total: Binding<Int>) {

@@ -13,6 +13,15 @@
 		FB5136C12AB754250011DE07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136C02AB754250011DE07 /* HomeView.swift */; };
 		FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C22AB754270011DE07 /* Assets.xcassets */; };
 		FB5136C62AB754270011DE07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C52AB754270011DE07 /* Preview Assets.xcassets */; };
+		FB7152522ABD21700088E0FB /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152512ABD21700088E0FB /* StatisticsView.swift */; };
+		FB7152542ABD218C0088E0FB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152532ABD218C0088E0FB /* SettingsView.swift */; };
+		FB7152562ABD21D40088E0FB /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152552ABD21D40088E0FB /* SettingsConfigurator.swift */; };
+		FB7152582ABD21FE0088E0FB /* StatisticsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152572ABD21FE0088E0FB /* StatisticsConfigurator.swift */; };
+		FB71525A2ABD22320088E0FB /* CounterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152592ABD22320088E0FB /* CounterRouter.swift */; };
+		FB71525C2ABD22860088E0FB /* SummaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71525B2ABD22860088E0FB /* SummaryRouter.swift */; };
+		FB71525F2ABD26C40088E0FB /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71525E2ABD26C40088E0FB /* View+Ext.swift */; };
+		FB7152622ABD2CE60088E0FB /* FreeRunFromConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152612ABD2CE60088E0FB /* FreeRunFromConfigurator.swift */; };
+		FB7152642ABD2D210088E0FB /* FreeRunFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7152632ABD2D210088E0FB /* FreeRunFormView.swift */; };
 		FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */; };
 		FB80DF5F2AB8568C00E17DB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */; };
 		FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */; };
@@ -31,6 +40,15 @@
 		FB5136C02AB754250011DE07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FB5136C22AB754270011DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5136C52AB754270011DE07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB7152512ABD21700088E0FB /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		FB7152532ABD218C0088E0FB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FB7152552ABD21D40088E0FB /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		FB7152572ABD21FE0088E0FB /* StatisticsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsConfigurator.swift; sourceTree = "<group>"; };
+		FB7152592ABD22320088E0FB /* CounterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRouter.swift; sourceTree = "<group>"; };
+		FB71525B2ABD22860088E0FB /* SummaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRouter.swift; sourceTree = "<group>"; };
+		FB71525E2ABD26C40088E0FB /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		FB7152612ABD2CE60088E0FB /* FreeRunFromConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeRunFromConfigurator.swift; sourceTree = "<group>"; };
+		FB7152632ABD2D210088E0FB /* FreeRunFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeRunFormView.swift; sourceTree = "<group>"; };
 		FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
@@ -90,11 +108,49 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FB71524F2ABD20910088E0FB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FB7152532ABD218C0088E0FB /* SettingsView.swift */,
+				FB7152552ABD21D40088E0FB /* SettingsConfigurator.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FB7152502ABD209A0088E0FB /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				FB7152512ABD21700088E0FB /* StatisticsView.swift */,
+				FB7152572ABD21FE0088E0FB /* StatisticsConfigurator.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		FB71525D2ABD26B10088E0FB /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FB71525E2ABD26C40088E0FB /* View+Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		FB7152602ABD2C7D0088E0FB /* FreeRun Form */ = {
+			isa = PBXGroup;
+			children = (
+				FB7152612ABD2CE60088E0FB /* FreeRunFromConfigurator.swift */,
+				FB7152632ABD2D210088E0FB /* FreeRunFormView.swift */,
+			);
+			path = "FreeRun Form";
+			sourceTree = "<group>";
+		};
 		FB80DF5B2AB8533200E17DB6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FB7152602ABD2C7D0088E0FB /* FreeRun Form */,
 				FB80DF692AB8A11600E17DB6 /* Counter */,
 				FBFB62512ABB06E800E3DCCA /* Home */,
+				FB71524F2ABD20910088E0FB /* Settings */,
+				FB7152502ABD209A0088E0FB /* Statistics */,
 				FB80DF682AB8A10B00E17DB6 /* Summary */,
 			);
 			path = Presentation;
@@ -106,6 +162,7 @@
 				FB80DF5C2AB8535700E17DB6 /* SummaryView.swift */,
 				FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */,
 				FBFB625A2ABB2FAE00E3DCCA /* SummaryConfigurator.swift */,
+				FB71525B2ABD22860088E0FB /* SummaryRouter.swift */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -116,6 +173,7 @@
 				FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */,
 				FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */,
 				FBFB62582ABB2E0F00E3DCCA /* CounterConfigurator.swift */,
+				FB7152592ABD22320088E0FB /* CounterRouter.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -123,6 +181,7 @@
 		FBFB624F2ABB06B100E3DCCA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB71525D2ABD26B10088E0FB /* Extentions */,
 				FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */,
 				FB5136C22AB754270011DE07 /* Assets.xcassets */,
 				FB5136C42AB754270011DE07 /* Preview Content */,
@@ -228,16 +287,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */,
+				FB7152522ABD21700088E0FB /* StatisticsView.swift in Sources */,
+				FB7152642ABD2D210088E0FB /* FreeRunFormView.swift in Sources */,
+				FB7152542ABD218C0088E0FB /* SettingsView.swift in Sources */,
 				FB5136C12AB754250011DE07 /* HomeView.swift in Sources */,
 				FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */,
 				FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */,
 				FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */,
 				FBFB62552ABB2BFA00E3DCCA /* HomeConfigurator.swift in Sources */,
 				FBFB625B2ABB2FAE00E3DCCA /* SummaryConfigurator.swift in Sources */,
+				FB7152582ABD21FE0088E0FB /* StatisticsConfigurator.swift in Sources */,
 				FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */,
 				FBFB62572ABB2CE000E3DCCA /* HomeRouter.swift in Sources */,
+				FB71525C2ABD22860088E0FB /* SummaryRouter.swift in Sources */,
+				FB7152562ABD21D40088E0FB /* SettingsConfigurator.swift in Sources */,
+				FB71525F2ABD26C40088E0FB /* View+Ext.swift in Sources */,
 				FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */,
 				FBFB62592ABB2E0F00E3DCCA /* CounterConfigurator.swift in Sources */,
+				FB71525A2ABD22320088E0FB /* CounterRouter.swift in Sources */,
+				FB7152622ABD2CE60088E0FB /* FreeRunFromConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,14 +12,63 @@ struct CounterView: View {
   
   var body: some View {
     VStack {
+      statisticButton()
+      countingButton()
+    }
+  }
+  
+  private func countingButton() -> some View {
+    VStack(spacing: 20) {
       Button {
         viewModel.updateZikirTotal()
       } label: {
         Text("+1")
-          .padding(.horizontal)
-          .padding(.vertical, 8)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
           .background(.regularMaterial)
       }
+      Text("Tap the screen to start counting")
+        .font(.caption)
+        .foregroundColor(.primary.opacity(0.7))
+    }
+  }
+  
+  private func statisticButton() -> some View {
+    VStack {
+      HStack {
+        Spacer()
+        Button {
+          viewModel.isPresentedFreeRunForm = true
+        } label: {
+          HStack {
+            Text("Edit")
+            Image(systemName: "pencil")
+          }
+          .foregroundColor(.blue)
+          .padding()
+          .background(.regularMaterial)
+          .cornerRadius(8)
+        }
+        .sheet(isPresented: $viewModel.isPresentedFreeRunForm) {
+          CounterRouter.destinationToFreeRunFormView()
+        }
+        
+        Button {
+          viewModel.isPresentedSettings = true
+        } label: {
+          HStack {
+            Text("Settings")
+            Image(systemName: "gear")
+          }
+          .foregroundColor(.blue)
+          .padding()
+          .background(.regularMaterial)
+          .cornerRadius(8)
+        }
+        .sheet(isPresented: $viewModel.isPresentedSettings) {
+          CounterRouter.destinationToSettingsView()
+        }
+      }
+      .padding(.trailing, 32)
     }
   }
 }

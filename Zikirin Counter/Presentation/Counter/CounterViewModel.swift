@@ -11,6 +11,8 @@ import FirebaseDatabaseSwift
 
 class CounterViewModel: ObservableObject {
   @Binding private var total: Int
+  @Published var isPresentedSettings = false
+  @Published var isPresentedFreeRunForm = false
   private let ref = Database.database().reference()
   
   init(total: Binding<Int>) {
