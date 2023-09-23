@@ -14,7 +14,7 @@ struct CounterView: View {
     ZStack {
       Color.backgroundPrimary.ignoresSafeArea()
       VStack {
-        statisticButton()
+        toolbarButton()
         countingButton()
       }
     }
@@ -37,10 +37,10 @@ struct CounterView: View {
     }
   }
   
-  private func statisticButton() -> some View {
+  private func toolbarButton() -> some View {
     VStack {
-      HStack(spacing: 12) {
-        Spacer()
+      HStack(alignment: .bottom, spacing: 12) {
+        CounterTabBar()
         Button {
           viewModel.isPresentedFreeRunForm = true
         } label: {
