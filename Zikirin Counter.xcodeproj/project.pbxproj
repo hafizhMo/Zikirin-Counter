@@ -26,6 +26,7 @@
 		FB80DF5F2AB8568C00E17DB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */; };
 		FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */; };
 		FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */; };
+		FBDA3CA42ABDF4BF00F24AAD /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA3CA32ABDF4BF00F24AAD /* Color+Ext.swift */; };
 		FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */; };
 		FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */; };
 		FBFB62552ABB2BFA00E3DCCA /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62542ABB2BFA00E3DCCA /* HomeConfigurator.swift */; };
@@ -53,6 +54,7 @@
 		FB80DF5E2AB8568C00E17DB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		FBDA3CA32ABDF4BF00F24AAD /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FBFB62542ABB2BFA00E3DCCA /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				FB71525E2ABD26C40088E0FB /* View+Ext.swift */,
+				FBDA3CA32ABDF4BF00F24AAD /* Color+Ext.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */,
 				FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */,
 				FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */,
+				FBDA3CA42ABDF4BF00F24AAD /* Color+Ext.swift in Sources */,
 				FBFB62552ABB2BFA00E3DCCA /* HomeConfigurator.swift in Sources */,
 				FBFB625B2ABB2FAE00E3DCCA /* SummaryConfigurator.swift in Sources */,
 				FB7152582ABD21FE0088E0FB /* StatisticsConfigurator.swift in Sources */,

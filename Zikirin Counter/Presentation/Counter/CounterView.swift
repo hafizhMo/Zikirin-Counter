@@ -11,42 +11,45 @@ struct CounterView: View {
   @ObservedObject var viewModel: CounterViewModel
   
   var body: some View {
-    VStack {
-      statisticButton()
-      countingButton()
+    ZStack {
+      Color.backgroundPrimary.ignoresSafeArea()
+      VStack {
+        statisticButton()
+        countingButton()
+      }
     }
   }
   
   private func countingButton() -> some View {
-    VStack(spacing: 20) {
-      Button {
-        viewModel.updateZikirTotal()
-      } label: {
+    Button {
+      viewModel.updateZikirTotal()
+    } label: {
+      VStack {
         Text("+1")
-          .frame(maxWidth: .infinity, maxHeight: .infinity)
-          .background(.regularMaterial)
+          .font(.system(size: 72, weight: .bold))
+          .padding(.vertical, 8)
+          .border(width: 4, edges: [.bottom], color: .textPrimary)
+        Text("33")
+          .font(.system(size: 32, weight: .medium))
       }
-      Text("Tap the screen to start counting")
-        .font(.caption)
-        .foregroundColor(.primary.opacity(0.7))
+      .foregroundColor(.textPrimary)
+      .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
   }
   
   private func statisticButton() -> some View {
     VStack {
-      HStack {
+      HStack(spacing: 12) {
         Spacer()
         Button {
           viewModel.isPresentedFreeRunForm = true
         } label: {
           HStack {
-            Text("Edit")
-            Image(systemName: "pencil")
+            Image(systemName: "magnifyingglass")
           }
-          .foregroundColor(.blue)
-          .padding()
-          .background(.regularMaterial)
-          .cornerRadius(8)
+          .foregroundColor(.textPrimary)
+          .padding(.vertical, 8)
+          .border(width: 1, edges: [.bottom], color: .textPrimary)
         }
         .sheet(isPresented: $viewModel.isPresentedFreeRunForm) {
           CounterRouter.destinationToFreeRunFormView()
@@ -56,19 +59,17 @@ struct CounterView: View {
           viewModel.isPresentedSettings = true
         } label: {
           HStack {
-            Text("Settings")
             Image(systemName: "gear")
           }
-          .foregroundColor(.blue)
-          .padding()
-          .background(.regularMaterial)
-          .cornerRadius(8)
+          .foregroundColor(.textPrimary)
+          .padding(.vertical, 8)
+          .border(width: 1, edges: [.bottom], color: .textPrimary)
         }
         .sheet(isPresented: $viewModel.isPresentedSettings) {
           CounterRouter.destinationToSettingsView()
         }
       }
-      .padding(.trailing, 32)
+      .padding(.trailing)
     }
   }
 }
