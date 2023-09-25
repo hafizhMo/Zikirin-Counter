@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FB1ADFE12AB7AF8000941D14 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FB1ADFE02AB7AF8000941D14 /* FirebaseDatabase */; };
 		FB1ADFE32AB7AF8000941D14 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB1ADFE22AB7AF8000941D14 /* FirebaseDatabaseSwift */; };
+		FB2E11472AC1E24A00D63B38 /* ZikirListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E11462AC1E24A00D63B38 /* ZikirListView.swift */; };
+		FB2E114A2AC1E26100D63B38 /* ZikirListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E11492AC1E26100D63B38 /* ZikirListConfigurator.swift */; };
+		FB2E114C2AC1E26D00D63B38 /* ZikirListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E114B2AC1E26D00D63B38 /* ZikirListViewModel.swift */; };
 		FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136BE2AB754250011DE07 /* ZikirinApp.swift */; };
 		FB5136C12AB754250011DE07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5136C02AB754250011DE07 /* HomeView.swift */; };
 		FB5136C32AB754270011DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5136C22AB754270011DE07 /* Assets.xcassets */; };
@@ -27,6 +30,7 @@
 		FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */; };
 		FB80DF6B2AB8A12500E17DB6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */; };
 		FB871BFE2ABF51C60006CABC /* CounterTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB871BFD2ABF51C60006CABC /* CounterTabBar.swift */; };
+		FB9654982AC11B5F0018FA80 /* Zikir.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9654972AC11B5F0018FA80 /* Zikir.swift */; };
 		FBDA3CA42ABDF4BF00F24AAD /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA3CA32ABDF4BF00F24AAD /* Color+Ext.swift */; };
 		FBFB624E2ABAD78600E3DCCA /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */; };
 		FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */; };
@@ -37,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB2E11462AC1E24A00D63B38 /* ZikirListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikirListView.swift; sourceTree = "<group>"; };
+		FB2E11492AC1E26100D63B38 /* ZikirListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikirListConfigurator.swift; sourceTree = "<group>"; };
+		FB2E114B2AC1E26D00D63B38 /* ZikirListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikirListViewModel.swift; sourceTree = "<group>"; };
 		FB5136BB2AB754250011DE07 /* Zikirin Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikirin Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5136BE2AB754250011DE07 /* ZikirinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikirinApp.swift; sourceTree = "<group>"; };
 		FB5136C02AB754250011DE07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		FB80DF602AB8580D00E17DB6 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		FB80DF6A2AB8A12500E17DB6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		FB871BFD2ABF51C60006CABC /* CounterTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTabBar.swift; sourceTree = "<group>"; };
+		FB9654972AC11B5F0018FA80 /* Zikir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikir.swift; sourceTree = "<group>"; };
 		FBDA3CA32ABDF4BF00F24AAD /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		FBFB624D2ABAD78600E3DCCA /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		FBFB62522ABB2AE100E3DCCA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -78,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB2E11482AC1E24D00D63B38 /* Zikir List */ = {
+			isa = PBXGroup;
+			children = (
+				FB2E11492AC1E26100D63B38 /* ZikirListConfigurator.swift */,
+				FB2E11462AC1E24A00D63B38 /* ZikirListView.swift */,
+				FB2E114B2AC1E26D00D63B38 /* ZikirListViewModel.swift */,
+			);
+			path = "Zikir List";
+			sourceTree = "<group>";
+		};
 		FB5136B22AB754250011DE07 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +115,7 @@
 		FB5136BD2AB754250011DE07 /* Zikirin Counter */ = {
 			isa = PBXGroup;
 			children = (
+				FB9654952AC11B470018FA80 /* Data */,
 				FBFB62502ABB06C300E3DCCA /* App */,
 				FB80DF5B2AB8533200E17DB6 /* Presentation */,
 				FBFB624F2ABB06B100E3DCCA /* Supporting Files */,
@@ -151,6 +170,7 @@
 		FB80DF5B2AB8533200E17DB6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FB2E11482AC1E24D00D63B38 /* Zikir List */,
 				FB7152602ABD2C7D0088E0FB /* FreeRun Form */,
 				FB80DF692AB8A11600E17DB6 /* Counter */,
 				FBFB62512ABB06E800E3DCCA /* Home */,
@@ -190,6 +210,22 @@
 				FB871BFD2ABF51C60006CABC /* CounterTabBar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FB9654952AC11B470018FA80 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB9654962AC11B4B0018FA80 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB9654962AC11B4B0018FA80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB9654972AC11B5F0018FA80 /* Zikir.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FBFB624F2ABB06B100E3DCCA /* Supporting Files */ = {
@@ -300,11 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2E114C2AC1E26D00D63B38 /* ZikirListViewModel.swift in Sources */,
 				FB80DF612AB8580D00E17DB6 /* SummaryViewModel.swift in Sources */,
+				FB2E114A2AC1E26100D63B38 /* ZikirListConfigurator.swift in Sources */,
+				FB9654982AC11B5F0018FA80 /* Zikir.swift in Sources */,
 				FB7152522ABD21700088E0FB /* StatisticsView.swift in Sources */,
 				FB7152642ABD2D210088E0FB /* FreeRunFormView.swift in Sources */,
 				FB7152542ABD218C0088E0FB /* SettingsView.swift in Sources */,
 				FB5136C12AB754250011DE07 /* HomeView.swift in Sources */,
+				FB2E11472AC1E24A00D63B38 /* ZikirListView.swift in Sources */,
 				FBFB62532ABB2AE100E3DCCA /* HomeViewModel.swift in Sources */,
 				FB5136BF2AB754250011DE07 /* ZikirinApp.swift in Sources */,
 				FB80DF5D2AB8535700E17DB6 /* SummaryView.swift in Sources */,

@@ -8,27 +8,27 @@
 import SwiftUI
 
 struct CounterTabBar: View {
-  private var names: [String] = ["Tab 1", "Tab 2", "Tab 3", "Tab 4", "Tab 5", "Tab 6", "Tab 7", "Tab 8", "Tab 9", "Tab 1000"]
+  var titles: [String]
   
-  @State var selectedIndex = 0
-  @Namespace private var menuItemTransition
+  @Binding var selected: Int
+  @Namespace private var namespace
   
   var body: some View {
     ScrollViewReader { scrollView in
       ScrollView(.horizontal, showsIndicators: false) {
         HStack(alignment: .firstTextBaseline) {
-          ForEach(names.indices, id: \.self) { index in
-            AppCodaTabItem(name: names[index], isActive: selectedIndex == index, namespace: menuItemTransition)
+          ForEach(titles.indices, id: \.self) { index in
+            CounterTabItem(title: titles[index], isActive: selected == index, namespace: namespace)
               .padding(.leading, index == 0 ? 20 : 0)
               .onTapGesture {
                 withAnimation(.easeInOut) {
-                  selectedIndex = index
+                  selected = index
                 }
               }
           }
         }
       }
-      .onChange(of: selectedIndex) { index in
+      .onChange(of: selected) { index in
         withAnimation {
           scrollView.scrollTo(index, anchor: .center)
         }
@@ -37,14 +37,14 @@ struct CounterTabBar: View {
   }
 }
 
-struct AppCodaTabItem: View {
-  var name: String
+struct CounterTabItem: View {
+  var title: String
   var isActive: Bool = false
   let namespace: Namespace.ID
   
   var body: some View {
     if isActive {
-      Text(name)
+      Text(title)
         .bold()
         .font(.title3)
         .padding(.vertical, 8)
@@ -52,7 +52,7 @@ struct AppCodaTabItem: View {
         .border(width: 1, edges: [.bottom], color: .textPrimary)
         .matchedGeometryEffect(id: "highlightmenuitem", in: namespace)
     } else {
-      Text(name)
+      Text(title)
         .font(.subheadline)
         .padding(8)
         .foregroundColor(.textPrimary.opacity(0.5))
@@ -63,6 +63,6 @@ struct AppCodaTabItem: View {
 
 struct CounterTabBar_Previews: PreviewProvider {
   static var previews: some View {
-    CounterTabBar()
+    CounterTabBar(titles: [], selected: .constant(0))
   }
 }

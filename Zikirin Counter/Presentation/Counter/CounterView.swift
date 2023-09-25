@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CounterView: View {
   @ObservedObject var viewModel: CounterViewModel
@@ -22,14 +23,15 @@ struct CounterView: View {
   
   private func countingButton() -> some View {
     Button {
-      viewModel.updateZikirTotal()
+//      viewModel.updateZikirTotal()
+      viewModel.progress += 1
     } label: {
       VStack {
-        Text("+1")
+        Text(viewModel.progress.description)
           .font(.system(size: 72, weight: .bold))
           .padding(.vertical, 8)
           .border(width: 4, edges: [.bottom], color: .textPrimary)
-        Text("33")
+        Text(viewModel.zikirList[viewModel.selectedTab].repetition.description)
           .font(.system(size: 32, weight: .medium))
       }
       .foregroundColor(.textPrimary)
@@ -40,9 +42,9 @@ struct CounterView: View {
   private func toolbarButton() -> some View {
     VStack {
       HStack(alignment: .bottom, spacing: 12) {
-        CounterTabBar()
+        CounterTabBar(titles: viewModel.zikirList.map { $0.title }, selected: $viewModel.selectedTab)
         Button {
-          viewModel.isPresentedFreeRunForm = true
+          viewModel.isPresentedZikirList = true
         } label: {
           HStack {
             Image(systemName: "magnifyingglass")
@@ -51,8 +53,8 @@ struct CounterView: View {
           .padding(.vertical, 8)
           .border(width: 1, edges: [.bottom], color: .textPrimary)
         }
-        .sheet(isPresented: $viewModel.isPresentedFreeRunForm) {
-          CounterRouter.destinationToFreeRunFormView()
+        .sheet(isPresented: $viewModel.isPresentedZikirList) {
+          CounterRouter.destinationToZikirListView(list: viewModel.zikirList)
         }
         
         Button {

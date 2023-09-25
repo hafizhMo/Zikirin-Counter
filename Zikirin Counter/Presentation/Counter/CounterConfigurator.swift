@@ -9,7 +9,7 @@ import SwiftUI
 
 final class CounterConfigurator {
   public static func configureCounterView(with total: Binding<Int>) -> CounterView {
-    let viewModel = CounterViewModel(total: total)
-    return CounterView(viewModel: viewModel)
+    let counterView = CounterView(viewModel: CounterViewModel(total: total))
+    return counterView
   }
 }

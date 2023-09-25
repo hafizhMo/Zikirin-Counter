@@ -15,4 +15,8 @@ final class CounterRouter {
   public static func destinationToFreeRunFormView() -> some View {
     return FreeRunFormConfigurator.configureFreeRunFormView()
   }
+  
+  public static func destinationToZikirListView(list: [Zikir]) -> some View {
+    return ZikirListConfigurator.configureZikirList(with: list)
+  }
 }
