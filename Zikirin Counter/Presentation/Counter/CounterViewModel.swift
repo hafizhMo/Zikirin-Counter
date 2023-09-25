@@ -23,12 +23,12 @@ class CounterViewModel: ObservableObject {
   init(total: Binding<Int>) {
     self._total = total
     self.zikirList = [
-      Zikir(title: "Istigfar", verse: "", romanized: "Astaghfirullah Al Adzim", repetition: 33),
-      Zikir(title: "Tasbih", verse: "", romanized: "Subhaanal malikil qudduus", repetition: 33),
-      Zikir(title: "Tahmid", verse: "", romanized: "Alhamdulillah", repetition: 33),
-      Zikir(title: "Takbir", verse: "", romanized: "Allahu akbar", repetition: 5),
-      Zikir(title: "Tahlil", verse: "", romanized: "Laailaaha Illallah", repetition: 33),
-      Zikir(title: "Salawat", verse: "", romanized: "Allahumma sholli ‘ala Muhammad", repetition: 100)
+      Zikir(title: "Istigfar", verse: "اَسْتَغْفِرُ اللهَ الْعَظِيْمَ", romanized: "Astaghfirullah Al Adzim", repetition: 33),
+      Zikir(title: "Tasbih", verse: "سُبْحَانَ الْمَلِكِ الْقُدُّوسِ", romanized: "Subhaanal malikil qudduus", repetition: 33),
+      Zikir(title: "Tahmid", verse: "ٱلْحَمْدُ لِلَّٰهِ", romanized: "Alhamdulillah", repetition: 33),
+      Zikir(title: "Takbir", verse: "ٱللَّٰهُ أَكْبَرُ", romanized: "Allahu akbar", repetition: 5),
+      Zikir(title: "Tahlil", verse: "لا إِلَهَ إِلا اللَّهُ", romanized: "Laailaaha Illallah", repetition: 33),
+      Zikir(title: "Salawat", verse: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وآلِ مُحَمَّدْ", romanized: "Allahumma sholli ‘ala Muhammad", repetition: 100)
     ]
   }
   

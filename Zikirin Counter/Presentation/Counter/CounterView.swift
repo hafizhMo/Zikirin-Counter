@@ -14,9 +14,12 @@ struct CounterView: View {
   var body: some View {
     ZStack {
       Color.backgroundPrimary.ignoresSafeArea()
+      countingButton()
+        .padding(.vertical, 150)
       VStack {
         toolbarButton()
-        countingButton()
+        zikirDetail()
+        Spacer()
       }
     }
   }
@@ -40,39 +43,50 @@ struct CounterView: View {
   }
   
   private func toolbarButton() -> some View {
-    VStack {
-      HStack(alignment: .bottom, spacing: 12) {
-        CounterTabBar(titles: viewModel.zikirList.map { $0.title }, selected: $viewModel.selectedTab)
-        Button {
-          viewModel.isPresentedZikirList = true
-        } label: {
-          HStack {
-            Image(systemName: "magnifyingglass")
-          }
-          .foregroundColor(.textPrimary)
-          .padding(.vertical, 8)
-          .border(width: 1, edges: [.bottom], color: .textPrimary)
+    HStack(alignment: .bottom, spacing: 12) {
+      CounterTabBar(titles: viewModel.zikirList.map { $0.title }, selected: $viewModel.selectedTab)
+      
+      Button {
+        viewModel.isPresentedZikirList = true
+      } label: {
+        HStack {
+          Image(systemName: "magnifyingglass")
         }
-        .sheet(isPresented: $viewModel.isPresentedZikirList) {
-          CounterRouter.destinationToZikirListView(list: viewModel.zikirList)
-        }
-        
-        Button {
-          viewModel.isPresentedSettings = true
-        } label: {
-          HStack {
-            Image(systemName: "gear")
-          }
-          .foregroundColor(.textPrimary)
-          .padding(.vertical, 8)
-          .border(width: 1, edges: [.bottom], color: .textPrimary)
-        }
-        .sheet(isPresented: $viewModel.isPresentedSettings) {
-          CounterRouter.destinationToSettingsView()
-        }
+        .foregroundColor(.textPrimary)
+        .padding(.vertical, 8)
+        .border(width: 1, edges: [.bottom], color: .textPrimary)
       }
-      .padding(.trailing)
+      .sheet(isPresented: $viewModel.isPresentedZikirList) {
+        CounterRouter.destinationToZikirListView(list: viewModel.zikirList)
+      }
+      
+      Button {
+        viewModel.isPresentedSettings = true
+      } label: {
+        HStack {
+          Image(systemName: "gear")
+        }
+        .foregroundColor(.textPrimary)
+        .padding(.vertical, 8)
+        .border(width: 1, edges: [.bottom], color: .textPrimary)
+      }
+      .sheet(isPresented: $viewModel.isPresentedSettings) {
+        CounterRouter.destinationToSettingsView()
+      }
     }
+    .padding(.trailing)
+  }
+  
+  private func zikirDetail() -> some View {
+    VStack(spacing: 8) {
+      Text(viewModel.zikirList[viewModel.selectedTab].verse)
+        .font(.title)
+        .foregroundColor(.textPrimary)
+      Text(viewModel.zikirList[viewModel.selectedTab].romanized)
+        .font(.title3)
+        .foregroundColor(.textPrimary.opacity(0.7))
+    }
+    .padding(.vertical)
   }
 }
 
