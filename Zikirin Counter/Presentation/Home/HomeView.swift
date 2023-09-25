@@ -12,7 +12,7 @@ struct HomeView: View {
   
   var body: some View {
     NavigationView {
-      VStack {
+      VStack(spacing: 0) {
         if viewModel.activeView == 0 {
           HomeRouter.displayForCounterTabView(total: $viewModel.total)
             .frame(maxHeight: .infinity)
@@ -20,14 +20,14 @@ struct HomeView: View {
           HomeRouter.displayForSummaryTabView(total: $viewModel.total)
         }
         
-        HStack {
+        HStack(spacing: 0) {
           Button {
             viewModel.activeView = 0
           } label: {
             Text("Counter")
               .bold()
               .font(.title)
-              .foregroundColor(.primary.opacity(viewModel.activeView == 0 ? 1 : 0.5))
+              .foregroundColor(.textPrimary.opacity(viewModel.activeView == 0 ? 1 : 0.5))
           }
           .disabled(viewModel.activeView == 0)
           .frame(maxWidth: .infinity)
@@ -38,11 +38,12 @@ struct HomeView: View {
             Text("Summary")
               .bold()
               .font(.title)
-              .foregroundColor(.primary.opacity(viewModel.activeView == 1 ? 1 : 0.5))
+              .foregroundColor(.textPrimary.opacity(viewModel.activeView == 1 ? 1 : 0.5))
           }
           .disabled(viewModel.activeView == 1)
           .frame(maxWidth: .infinity)
         }
+        .background(Color.backgroundPrimary)
       }
       .onAppear {
         viewModel.onAppear()

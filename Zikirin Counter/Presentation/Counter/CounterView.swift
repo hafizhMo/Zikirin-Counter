@@ -80,11 +80,12 @@ struct CounterView: View {
   private func zikirDetail() -> some View {
     VStack(spacing: 8) {
       Text(viewModel.zikirList[viewModel.selectedTab].verse)
+        .bold()
         .font(.title)
         .foregroundColor(.textPrimary)
       Text(viewModel.zikirList[viewModel.selectedTab].romanized)
         .font(.title3)
-        .foregroundColor(.textPrimary.opacity(0.7))
+        .foregroundColor(.textPrimary)
     }
     .padding(.vertical)
   }
